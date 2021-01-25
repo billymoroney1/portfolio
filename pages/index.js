@@ -22,7 +22,7 @@ export default function Home() {
         deployed='https://billy-album-picker.herokuapp.com/'
         git='https://github.com/billymoroney1/billy-album-picker'
         info='A server-side app using NodeJS, Express, SQL, Sequelize, EJS, Materialize CSS, and the Spotify API. You can create an account, search for albums/artists/tracks, save albums, create playlists, and view some album metadata.'
-        technologies={['Nodejs', 'express', 'Postgresql', 'Sequelize', 'Ejs', 'materialize', 'Spotify']}
+        technologies={['Nodejs', 'Postgresql', 'Sequelize', 'materialize', 'Spotify']}
       />
       <Project
         name='Chirper'
@@ -30,7 +30,7 @@ export default function Home() {
         deployed='https://chirper.surge.sh/'
         git='https://github.com/billymoroney1/Team-7-frontend'
         info='A quick-and-dirty Twitter imitation. Full-stack group project that allows users to make accounts, follow other users, make posts, reply, repost, search for users and posts, like posts, and more. Uses the MERN stack, front end is deployed through Surge, the backend is on Heroku.'
-        technologies={['Mongo', 'express', 'React', 'Nodejs', 'Heroku', 'Surge', 'Bootstrap']}
+        technologies={['Mongo', 'React', 'Nodejs', 'Heroku', 'Surge', 'Bootstrap']}
         />
     </Layout>
   )

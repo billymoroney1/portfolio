@@ -42,9 +42,9 @@ export default function Contact() {
     }
 
     return (
-        <div>
+        <div className='bg-emerald-300'>
             <div className='flex items-center h-screen w-full'>
-                <div className='w-full bg-black rounded shadow-lg p-8 m-4 md:max-w-3xl md:mx-auto text-gray-100'>
+                <div className='w-full bg-rose-500 rounded shadow-lg p-8 m-4 md:max-w-3xl md:mx-auto text-gray-200'>
                 <h1 className='mb-2 md:flex md:flex-wrap md:justrify-between uppercase font-bold text-3xl text-grey-darkest'>contact</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="flex flex-col mb-4">
@@ -60,7 +60,7 @@ export default function Contact() {
                             <textarea className='border py-2 px-3 text-grey-darkest' name='message' value={message} onChange={handleChange} />
                         </div>
                         
-                        <button className='block border bg-gray-400 hover:bg-green-400 uppercase text-lg mx-auto rounded p-4' type="submit" value="Submit">Submit</button>
+                        <button className='block border bg-gray-400 hover:bg-cyan-500 uppercase text-lg mx-auto rounded p-4' type="submit" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>
