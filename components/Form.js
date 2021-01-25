@@ -24,7 +24,7 @@ export default function Contact() {
     const handleSubmit = (e) => {
         console.log(name, email, message)
         e.preventDefault()
-        axios.post('http://localhost:8000/send', {
+        axios.post('https://billy-moroney-portfolio.herokuapp.com/send', {
             name: name,
             email: email,
             message: message
