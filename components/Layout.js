@@ -22,7 +22,7 @@ export default function Layout({children}){
                 </div> 
             </nav>
             
-            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-4 items-center justify-around text-xl lg:p-5'>
+            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-4 items-center justify-around text-xl'>
                 {/* <h1 className='font-extrabold text-center text-4xl pb-6'>About Me</h1> */}
                     <img src='/profile.png' className='rounded-xl' style={{height: '200px', width: '200px'}} />
                     <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
