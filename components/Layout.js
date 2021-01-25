@@ -48,13 +48,13 @@ export default function Layout({children}){
             <footer className="w-full bg-rose-600 text-white text-xl">
                 <div className="container mx-auto flex justify-around items-center">
                     <ul className="pt-12 pb-12 space-x-10 self-center text-l">
-                        <li className="inline-block border-4 border-cyan-500 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
+                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
                             <a href='https://github.com/billymoroney1' target='_blank'>Github</a>
                         </li>
-                        <li className="inline-block border-4 border-cyan-500 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
+                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
                             <a href='/resume.pdf'>Resume</a>
                         </li>
-                        <li className="inline-block border-4 border-cyan-500 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
+                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
                             <a href='https://www.linkedin.com/in/william-moroney-b43044138/' target="_blank" download>Linkedin</a>
                         </li>
                     </ul>
