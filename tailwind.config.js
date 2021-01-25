@@ -13,7 +13,11 @@ module.exports = {
       rose: colors.rose,
       emerald: colors.emerald,
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'manrope': 'Manrope, sans-serif',
+      }
+    },
   },
   variants: {
     extend: {},

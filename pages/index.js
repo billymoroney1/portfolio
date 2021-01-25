@@ -32,6 +32,14 @@ export default function Home() {
         info='A quick-and-dirty Twitter imitation. Full-stack group project that allows users to make accounts, follow other users, make posts, reply, repost, search for users and posts, like posts, and more. Uses the MERN stack, front end is deployed through Surge, the backend is on Heroku.'
         technologies={['Mongo', 'React', 'Nodejs', 'Heroku', 'Surge', 'Bootstrap']}
         />
+      <Project
+        name='Portfolio'
+        img='/project4.png'
+        deployed='https://portfolio-fklk6wjwl.vercel.app/'
+        git='https://github.com/billymoroney1/portfolio'
+        info='This very website! Has a decoupled backend to handle emails sent from the contact form. Used NextJS and Tailwind CSS for the front end, both are really fun! Built for mobile first -'
+        technologies={['React', 'Nodejs', 'Nextjs', 'Tailwind', 'Heroku']}
+        />
     </Layout>
   )
 }
