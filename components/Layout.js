@@ -24,7 +24,7 @@ export default function Layout({children}){
             
             <div className='w-full opacity-85 bg-cyan-100 flex flex-col items-center justify-around text-xl lg:p-5'>
                 {/* <h1 className='font-extrabold text-center text-4xl pb-6'>About Me</h1> */}
-                    <img src='http://placekitten.com/200/200' className='rounded-xl' />
+                    <img src='/profile.png' className='rounded-xl' style={{height: '200px', width: '200px'}} />
                     <hr className='border-12 border-gray-900 w-3/5 mt-7'></hr>
                     <p className='sm:w-4/5 md:w-3/5 text-black p-8'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
                     <hr className='border-12 border-gray-900 w-3/5'></hr>
@@ -38,6 +38,9 @@ export default function Layout({children}){
                 </div>
                 <div className="container mx-auto w-4/5 flex flex-col space-y-6">
                     {children}
+                </div>
+                <div className="container mx-auto flex justify-around">
+                    <img src='/assistant.jpeg' className='rounded-xl' style={{height: '200px', width: '175px'}} />
                 </div>
             </div>
             <footer className="w-full bg-rose-600 text-white text-xl">
