@@ -30,7 +30,7 @@ export default function Layout({children}){
                     </div>
                     <p className='sm:w-4/5 md:w-3/5 text-black p-8'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
                     <hr className='border-12 border-gray-900 w-3/5'></hr>
-                    <p className='md:w-2/5 text-black p-8'>I coded some Java in high school, fell in love with visual/audio programming tools like Max and Reactor, and was motivated by those interests to learn full-stack development at General Assembly.</p>
+                    <p className='md:w-2/5 text-black p-8'>I learned some Java in high school, started extensively with visual/audio programming tools like Max and Reactor in college, and was motivated by those interests to learn full-stack development at General Assembly.</p>
                     <hr className='border-12 border-gray-900 w-3/5'></hr>
                     <p className='pt-8'>I also make <a href='https://billymoroney.bandcamp.com/releases' className='text-cyan-500' target='_blank'>music</a></p>
             </div>
