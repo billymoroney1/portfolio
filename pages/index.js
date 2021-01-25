@@ -37,7 +37,7 @@ export default function Home() {
         img='/project4.png'
         deployed='https://portfolio-fklk6wjwl.vercel.app/'
         git='https://github.com/billymoroney1/portfolio'
-        info='This very website! Has a decoupled backend to handle emails sent from the contact form. Used NextJS and Tailwind CSS for the front end, both are really fun! Built for mobile first -'
+        info='This very website! Has a decoupled backend to handle emails sent from the contact form. (**Currently resolving issues between Heroku and Gmail, I can get to work locally**) Used NextJS and Tailwind CSS for the front end, both are really fun! Built for mobile first -'
         technologies={['React', 'Nodejs', 'Nextjs', 'Tailwind', 'Heroku']}
         />
     </Layout>
