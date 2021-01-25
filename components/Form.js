@@ -44,7 +44,7 @@ export default function Contact() {
     return (
         <div className='bg-cyan-100'>
             <div className='flex items-center h-screen w-full'>
-                <div className='w-full bg-rose-500 rounded shadow-lg p-8 m-4 md:max-w-3xl md:mx-auto text-gray-600'>
+                <div className='w-full bg-rose-500 rounded shadow-lg p-8 m-4 md:max-w-3xl md:mx-auto text-gray-800'>
                 <h1 className='mb-2 md:flex md:flex-wrap md:justrify-between uppercase font-bold text-3xl text-grey-darkest'>contact</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="flex flex-col mb-4">
