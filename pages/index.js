@@ -1,65 +1,37 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+
+import Layout from '../components/Layout.js'
+import Project from '../components/Project.js'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <Layout>
+      <Project  
+        name='Mario Party'
+        img='/project1.jpeg'
+        deployed='https://billymoroney1.github.io/mario-party/'
+        git='https://github.com/billymoroney1/mario-party'
+        info='The first project I finished. Play a bootleg version of Mario Party against the computer in your browser. Game relies on DOM manipulation and some hacky manipulation of CSS classes. Would like to rework using HTML canvas in the future!'
+        technologies={['Javascript', 'HTML', 'CSS']}
+       />
+      <Project 
+        name='Music Search'
+        img='/project2.jpeg'
+        deployed='https://billy-album-picker.herokuapp.com/'
+        git='https://github.com/billymoroney1/billy-album-picker'
+        info='A server-side app using NodeJS, Express, SQL, Sequelize, EJS, Materialize CSS, and the Spotify API. You can create an account, search for albums/artists/tracks, save albums, create playlists, and view some album metadata.'
+        technologies={['Nodejs', 'express', 'Postgresql', 'Sequelize', 'Ejs', 'materialize', 'Spotify']}
+      />
+      <Project
+        name='Chirper'
+        img='/project3.png'
+        deployed='https://chirper.surge.sh/'
+        git='https://github.com/billymoroney1/Team-7-frontend'
+        info='A quick-and-dirty Twitter imitation. Full-stack group project that allows users to make accounts, follow other users, make posts, reply, repost, search for users and posts, like posts, and more. Uses the MERN stack, front end is deployed through Surge, the backend is on Heroku.'
+        technologies={['Mongo', 'express', 'React', 'Nodejs', 'Heroku', 'Surge', 'Bootstrap']}
+        />
+    </Layout>
   )
 }
