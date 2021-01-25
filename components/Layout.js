@@ -10,10 +10,10 @@ export default function Layout({children}){
                         <div className="flex justify-around">
                         <a className="text-3xl font-bold p-3">billy moroney</a>
                         <ul className="space-x-10 sm:self-center text-xl sm:border-none">
-                            <li className="hover:text-rose-500 inline border-4 rounded-xl p-2">
+                            <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2">
                                 <Link href='/'>home</Link>
                             </li>
-                            <li className="hover:text-rose-500 inline border-4 rounded-xl p-2">
+                            <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2">
                                 <Link href='/contact'>contact</Link>
                             </li>
                         </ul>
@@ -22,10 +22,12 @@ export default function Layout({children}){
                 </div> 
             </nav>
             
-            <div className='w-full opacity-85 bg-cyan-100 flex flex-col items-center justify-around text-xl lg:p-5'>
+            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-4 items-center justify-around text-xl lg:p-5'>
                 {/* <h1 className='font-extrabold text-center text-4xl pb-6'>About Me</h1> */}
                     <img src='/profile.png' className='rounded-xl' style={{height: '200px', width: '200px'}} />
-                    <hr className='border-12 border-gray-900 w-3/5 mt-7'></hr>
+                    <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
+                        <span>About Me</span>
+                    </div>
                     <p className='sm:w-4/5 md:w-3/5 text-black p-8'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
                     <hr className='border-12 border-gray-900 w-3/5'></hr>
                     <p className='md:w-2/5 text-black p-8'>I coded some Java in high school, fell in love with visual/audio programming tools like Max and Reactor, and was motivated by those interests to learn full-stack development at General Assembly.</p>
@@ -33,7 +35,7 @@ export default function Layout({children}){
                     <p className='pt-8'>I also make <a href='https://billymoroney.bandcamp.com/releases' className='text-cyan-500' target='_blank'>music</a></p>
             </div>
             <div className='flex flex-col space-y-6 pb-6'>
-                <div className="w-full h-40 bg-rose-600 text-white shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
+                <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
                     <span>Projects</span>
                 </div>
                 <div className="container mx-auto w-4/5 flex flex-col space-y-6">
