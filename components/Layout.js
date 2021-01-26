@@ -4,17 +4,20 @@ import Image from 'next/image'
 
 export default function Layout({children}){
     return (
-        <div className="font-sans bg-cyan-300 font-manrope font-light">
+        <div id='top' className="font-sans bg-cyan-300 font-manrope font-light">
             <nav className='bg-cyan-300 text-gray-700 shadow-lg'>
                     <div className="container mx-auto">
                         <div className="flex justify-around">
-                        <a className="text-3xl font-bold p-3">billy moroney</a>
-                        <ul className="space-x-10 sm:self-center text-xl sm:border-none">
-                            <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2">
-                                <Link href='/'>home</Link>
+                        <a className="sm:text-m md:text-3xl font-bold p-3">billy moroney</a>
+                        <ul className="sm:text-s sm:p-1 md:space-x-10 sm:self-center md:text-xl sm:border-none">
+                            <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2 transition duration-400 ease-in-out">
+                                <Link href='https://portfolio.billymoroney1.vercel.app/#projects'>projects</Link>
+                            </li>
+                            <li className="inline border-4 border-gray-600 hover:text-rose-500 rounded-xl p-2">
+                                <a href='/resume.pdf'>resume</a>
                             </li>
                             <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2">
-                                <Link href='/contact'>contact</Link>
+                                <Link href='https://portfolio.billymoroney1.vercel.app/#contact'>contact</Link>
                             </li>
                         </ul>
                             
@@ -22,43 +25,44 @@ export default function Layout({children}){
                 </div> 
             </nav>
             
-            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-4 items-center justify-around text-xl'>
+            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-4 pb-6 items-center justify-around text-xl'>
                 {/* <h1 className='font-extrabold text-center text-4xl pb-6'>About Me</h1> */}
-                    <img src='/profile.png' className='rounded-xl' style={{height: '200px', width: '200px'}} />
+                    <p className='sm:w-4/5 md:w-3/5 text-black md:text-3xl p-20'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
                     <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
-                        <span>About Me</span>
+                    <span>About Me</span>
                     </div>
-                    <p className='sm:w-4/5 md:w-3/5 text-black p-8'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
+                    <div className="md:grid md:gap-3 md:grid-cols-2 md:text-2xl sm:w-full md:w-3/5 md:m-12 md:justify-items-center md:items-center sm:text-center">
+                        <div className='flex justify-around'>
+                            <img src='/profile.png' className='rounded-xl' style={{height: '300px', width: '300px'}} />
+                        </div>
+                        <p className='text-black align-middle m-4'>I learned some Java in high school, started working extensively with visual/audio programming tools like Max and Reactor in college, and was motivated by those interests to learn full-stack development at General Assembly.</p>
+                    </div>
                     <hr className='border-12 border-gray-900 w-3/5'></hr>
-                    <p className='md:w-2/5 text-black p-8'>I learned some Java in high school, started working extensively with visual/audio programming tools like Max and Reactor in college, and was motivated by those interests to learn full-stack development at General Assembly.</p>
-                    <hr className='border-12 border-gray-900 w-3/5'></hr>
-                    <p className='pt-8'>I also make <a href='https://billymoroney.bandcamp.com/releases' className='text-cyan-500' target='_blank'>music</a></p>
+                    <div className="md:grid md:gap-3 md:grid-cols-2 md:text-2xl w-3/5 md:m-12 justify-items-center items-center">
+                        <p className='pt-8 pb-8 text-2xl text-center'>I also make <a href='https://billymoroney.bandcamp.com/releases' className='text-cyan-500' target='_blank'>music</a></p>
+                        <img src='/assistant.jpeg' className='rounded-xl' style={{height: '300px', width: '275px'}} />
+                    </div>
             </div>
             <div className='flex flex-col space-y-6 pb-6'>
-                <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
+                <div id='projects' className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
                     <span>Projects</span>
                 </div>
                 <div className="container mx-auto w-4/5 flex flex-col space-y-6">
                     {children}
                 </div>
-                <div className="container mx-auto flex justify-around">
-                    <img src='/assistant.jpeg' className='rounded-xl' style={{height: '200px', width: '175px'}} />
-                </div>
             </div>
-            <footer className="w-full bg-rose-600 text-white text-xl">
+            <footer id='contact' className="w-full bg-rose-600 text-white text-xl flex flex-col items-center">
                 <div className="container mx-auto flex justify-around items-center">
                     <ul className="pt-12 pb-12 space-x-10 self-center text-l">
-                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
-                            <a href='https://github.com/billymoroney1' target='_blank'>Github</a>
+                        <li className="inline-block rounded-xl p-2">
+                            <a href='https://github.com/billymoroney1' target='_blank'><img src='/github.png' style={{width: '50px', height: '50px'}}/></a>
                         </li>
-                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
-                            <a href='/resume.pdf'>Resume</a>
-                        </li>
-                        <li className="inline-block border-4 border-gray-300 border-opacity-70 hover:border-opacity-100 rounded-xl p-2">
-                            <a href='https://www.linkedin.com/in/william-moroney-b43044138/' target="_blank" download>Linkedin</a>
+                        <li className="inline-block rounded-xl p-2">
+                            <a href='https://www.linkedin.com/in/william-moroney-b43044138/' target="_blank" download><img src='/linkedin.png' style={{width: '50px', height: '50px'}}/></a>
                         </li>
                     </ul>
                 </div>
+                <a href='https://portfolio.billymoroney1.vercel.app/#top' className='pb-7'>Top</a>
             </footer>
         </div>
     )
