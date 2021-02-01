@@ -30,9 +30,9 @@ export default function Layout({children}){
                 </div> 
             </nav>
             
-            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-8 pb-6 items-center justify-around text-xl'>
+            <div className='w-full opacity-85 bg-cyan-100 flex flex-col space-y-32 items-center justify-around text-xl'>
                 {/* <h1 className='font-extrabold text-center text-4xl pb-6'>About Me</h1> */}
-                    <p data-aos="fade-up" className='sm:w-4/5 md:w-3/5 text-black md:text-3xl p-20'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
+                    <p data-aos="fade-up" className='sm:w-4/5 md:w-3/5 text-black md:text-3xl p-32'>I'm a full-stack software engineer in Chicago with a background in music, writing, and teaching. I fell in love with coding because it gives me opportunities to solve difficult problems and be creative every day.</p>
                     <div data-aos="fade-up" className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
                     <span>About Me</span>
                     </div>
