@@ -1,11 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Form(props){
     const [click, setClick] = useState(false)
 
+    useEffect(() => {
+        Aos.init({duration: 1000})
+    }, [])
+
     return(
-        <div className="bg-gray-300 rounded-md shadow-md sm:flex sm:flex-col sm:space-x-4 sm:items-center md:inline-grid md:grid-cols-2 md:grid-rows-6">
+        <div data-aos='fade-up' className="bg-gray-300 rounded-md shadow-md sm:flex sm:flex-col sm:space-x-4 sm:items-center md:inline-grid md:grid-cols-2 md:grid-rows-6">
             <div className="row-span-4 self-center md:ml-5 m-3">
                 <Image 
                     src={props.img}
