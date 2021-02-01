@@ -14,7 +14,7 @@ export default function Layout({children}){
                     <div data-aos='fade-left' className="container mx-auto">
                         <div className="flex justify-around">
                         <a className="sm:text-m md:text-3xl font-bold p-3">billy moroney</a>
-                        <ul className="sm:text-s sm:p-1 md:space-x-10 sm:self-center md:text-xl sm:border-none">
+                        <ul className="sm:text-s sm:p-1 md:space-x-10 sm:self-center md:text-xl">
                             <li className="hover:text-rose-500 inline border-4 border-gray-600 rounded-xl p-2 transition duration-400 ease-in-out">
                                 <Link href='https://portfolio.billymoroney1.vercel.app/#projects'>projects</Link>
                             </li>
@@ -48,8 +48,8 @@ export default function Layout({children}){
                         <img src='/assistant.jpeg' className='rounded-xl' style={{height: '300px', width: '275px'}} />
                     </div>
             </div>
-            <div data-aos="fade-up" className='flex flex-col space-y-6 pb-6'>
-                <div id='projects' className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
+            <div id='projects' data-aos="fade-up" className='flex flex-col space-y-6 pb-6'>
+                <div className="w-full h-40 bg-rose-600 text-gray-100 shadow-lg flex items-center justify-around align-middle font-extrabold text-center text-4xl">
                     <span>Projects</span>
                 </div>
                 <div className="container mx-auto w-4/5 flex flex-col space-y-6">
