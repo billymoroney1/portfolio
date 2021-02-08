@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import Form from './Form.js'
+
 
 export default function Layout({children}){
     useEffect(() => {
@@ -55,6 +57,9 @@ export default function Layout({children}){
                 <div className="container mx-auto w-4/5 flex flex-col space-y-6">
                     {children}
                 </div>
+            </div>
+            <div id='contact'>
+                <Form />
             </div>
             <footer data-aos="fade-up" id='contact' className="w-full bg-rose-600 text-white text-xl flex flex-col items-center">
                 <div className="container mx-auto flex justify-around items-center">

@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 const axios = require('axios')
 
+import emailjs from 'emailjs-com'
+
+
+
 export default function Contact() {
 
     const [name, setName] = useState("")
@@ -23,23 +27,22 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         console.log(name, email, message)
+        console.log(process.env.SERVICE_ID, process.env.TEMPLATE_ID, process.env.USER_ID)
         e.preventDefault()
-        axios.post('https://billy-moroney-portfolio.herokuapp.com/send', {
-            name: name,
-            email: email,
-            message: message
-        }).then((response) => {
-            console.log(response)
-        }).catch((error)=>{
-            console.log(error)
-        })
+        
+        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            })
     }
 
-    const resetForm = () => {
-        setName("")
-        setEmail("")
-        setMessage("")
-    }
+    // const resetForm = () => {
+    //     setName("")
+    //     setEmail("")
+    //     setMessage("")
+    // }
 
     return (
         <div className='bg-cyan-100'>
