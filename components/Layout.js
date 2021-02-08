@@ -58,7 +58,7 @@ export default function Layout({children}){
                     {children}
                 </div>
             </div>
-            <div id='contact'>
+            <div data-aos="fade-up" id='contact'>
                 <Form />
             </div>
             <footer data-aos="fade-up" id='contact' className="w-full bg-rose-600 text-white text-xl flex flex-col items-center">
