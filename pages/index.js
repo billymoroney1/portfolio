@@ -8,6 +8,14 @@ import Project from '../components/Project.js'
 export default function Home() {
   return (
     <Layout>
+      <Project 
+        name='Synth'
+        img='/synth.png'
+        deployed='https://synth-frontend.vercel.app/'
+        git='https://github.com/billymoroney1/synth-frontend'
+        info='Capstone project for General Assembly. Full-stack application using MERN, NextJS, TailwindCSS, and the node package Tone.js. Allows users to design sounds in the browser and perform full CRUD operations on their settings.'
+        technologies={['Mongo', 'React', 'Nodejs', 'Heroku', 'Tailwind']}
+      />
       <Project  
         name='Mario Party'
         img='/project1.jpeg'
